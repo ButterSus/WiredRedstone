@@ -15,6 +15,7 @@ import com.kneelawk.wiredredstone.node.WRBlockNodes
 import com.kneelawk.wiredredstone.part.WRParts
 import com.kneelawk.wiredredstone.recipe.WRRecipes
 import com.kneelawk.wiredredstone.screenhandler.WRScreenHandlers
+import com.kneelawk.wiredredstone.keybinding.WRKeyBindings
 
 @Suppress("unused")
 fun init() {
@@ -29,6 +30,7 @@ fun init() {
     WRRecipes.init()
     WRScreenHandlers.init()
     WRNetworking.init()
+    WRKeyBindings.init()
 
     CCIntegrationHandler.init()
     EMIIntegrationHandler.init()

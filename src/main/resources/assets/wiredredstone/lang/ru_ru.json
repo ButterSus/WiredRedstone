@@ -167,5 +167,8 @@
   "tag.wiredredstone.insulated_wires": "Изолированные провода",
   "tag.wiredredstone.colored_standing_bundled_cables": "Цветные постоянные связанные кабели",
   "tag.wiredredstone.standing_insulated_wires": "Постоянные изолированные провода",
-  "tag.wiredredstone.screwdrivers": "Отвертки"
+  "tag.wiredredstone.screwdrivers": "Отвертки",
+
+  "key.wiredredstone.mod_name": "Проводной редстоун",
+  "key.wiredredstone.toggle_wire_state": "Переключить состояние провода"
 }

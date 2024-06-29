@@ -24,6 +24,7 @@ object WRNetworking {
 
     val HELLO_CHANNEL = id("hello")
     val CONFIG_SYNC_CHANNEL = id("config_sync")
+    val INVENTORY_UPDATE_CHANNEL = id("inventory_update")
 
     private val MISSING_MOD_LOGIN_TEXT = Text.literal("Client is missing Wired Redstone mod version >= 0.4.15")
     private val MISSING_MOD_PLAY_TEXT = Text.literal("Client is missing Wired Redstone mod version >= 0.4.16")
@@ -76,6 +77,12 @@ object WRNetworking {
                     }
                 }
             }
+        }
+
+        ServerPlayNetworking.registerGlobalReceiver(INVENTORY_UPDATE_CHANNEL) { _, player, handler, buf, _ ->
+            val slot = buf.readInt()
+            val itemStack = buf.readItemStack()
+            player.server.execute { player.inventory.setStack(slot, itemStack) }
         }
 
         ServerPlayConnectionEvents.DISCONNECT.register { handler, _ ->

@@ -167,5 +167,9 @@
   "tag.wiredredstone.insulated_wires": "Insulated Wires",
   "tag.wiredredstone.colored_standing_bundled_cables": "Colored Standing Bundled Cables",
   "tag.wiredredstone.standing_insulated_wires": "Standing Insulated Wires",
-  "tag.wiredredstone.screwdrivers": "Screwdrivers"
+  "tag.wiredredstone.screwdrivers": "Screwdrivers",
+
+  "key.wiredredstone.mod_name": "Wired Redstone",
+  "key.wiredredstone.toggle_wire_state": "Toggle Wire State"
 }
+

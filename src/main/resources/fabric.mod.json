@@ -61,6 +61,7 @@
     "fabricloader": ">=0.12.12",
     "fabric": "*",
     "fabric-language-kotlin": ">=1.8.1+kotlin.1.7.0",
+    "fabric-key-binding-api-v1": "*",
     "graphlib": "*",
     "libmultipart": ">=0.7.3-pre.3",
     "libnetworkstack": ">=0.6.0",

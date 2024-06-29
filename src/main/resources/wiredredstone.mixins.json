@@ -8,6 +8,9 @@
   "client": [
     "ClientRecipeBookMixin",
     "GameRendererAccessor",
+    "InGameHudMixin",
+    "MouseMixin",
+    "PlayerInventoryMixin",
     "RenderLayerAccessor"
   ],
   "mixins": [
